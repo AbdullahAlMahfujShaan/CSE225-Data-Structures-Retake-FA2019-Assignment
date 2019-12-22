@@ -152,6 +152,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="CSE225_Fall19_Assignment.cpp" />
+    <ClCompile Include="QueueType.cpp" />
+    <ClCompile Include="StackType.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="QueueType.h" />
+    <ClInclude Include="StackType.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
