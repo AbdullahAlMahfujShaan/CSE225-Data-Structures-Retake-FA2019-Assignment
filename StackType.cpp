@@ -1,26 +1,57 @@
 #include "StackType.h"
+using namespace std;
 template <class ItemType> 
 StackType<ItemType>::StackType() 
-{ top = -1; }
+{ 
+	top = -1; 
+}
 template <class ItemType>
 bool StackType<ItemType>::IsEmpty()
-{ return (top == -1); }
+{
+	return (top == -1); 
+}
 template <class ItemType>
 bool StackType<ItemType>::IsFull() 
-{ return (top == MAX_ITEMS - 1); }
+{ 
+	return (top == MAX_ITEMS - 1); 
+}
 template <class ItemType> 
 void StackType<ItemType>::Push(ItemType newItem) 
-{ if (IsFull()) throw FullStack();  
+{ 
+	if (IsFull()) throw FullStack();  
 top++;    
 items[top] = newItem; 
 }
 template <class ItemType>
 void StackType<ItemType>::Pop() 
-{ if (IsEmpty()) throw EmptyStack();  
+{ 
+	if (IsEmpty()) throw EmptyStack();  
 top--; 
 }
 template <class ItemType> 
 ItemType StackType<ItemType>::Top() 
-{ if (IsEmpty()) throw EmptyStack();  
-return items[top];
+{ 
+	if (IsEmpty()) throw EmptyStack();  
+return
+items[top];
 }
+template <class ItemType>
+ SeatType<ItemType>::SeatType()
+{ 
+    
+}
+
+ template <class ItemType>
+  int SeatType<ItemType>::SeatTypeColor()
+ {
+      
+      return color = 5;
+ }
+
+  template <class ItemType>
+  int SeatType<ItemType>::SeatTypeType()
+  {
+      
+      return type = 9;
+  }
+ 

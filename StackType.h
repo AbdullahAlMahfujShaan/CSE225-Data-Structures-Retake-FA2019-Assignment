@@ -2,7 +2,20 @@
 #define STACKTYPE_H_INCLUDED
 const int MAX_ITEMS = 5;
 class FullStack {};
+
     class EmptyStack  {};
+
+    template <class ItemType>
+    class SeatType
+    {
+    public:
+        SeatType();
+        int color;
+        int type;
+        int SeatTypeColor();
+        int SeatTypeType();
+        
+    };
     template <class ItemType> 
     class StackType 
     {
